@@ -1,0 +1,508 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4F0F57A21F613EFA0052F01C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F0F57A11F613EFA0052F01C /* main.m */; };
+		4F0F57A51F613EFA0052F01C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F0F57A41F613EFA0052F01C /* AppDelegate.m */; };
+		4F0F57A81F613EFA0052F01C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F0F57A71F613EFA0052F01C /* ViewController.m */; };
+		4F0F57AB1F613EFA0052F01C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F0F57A91F613EFA0052F01C /* Main.storyboard */; };
+		4F0F57AD1F613EFA0052F01C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F0F57AC1F613EFA0052F01C /* Assets.xcassets */; };
+		4F0F57B01F613EFA0052F01C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F0F57AE1F613EFA0052F01C /* LaunchScreen.storyboard */; };
+		4F0F57BA1F6140340052F01C /* CYBleDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F0F57B91F6140340052F01C /* CYBleDevice.m */; };
+		4F0F57BD1F6140420052F01C /* CYBleScanning.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F0F57BC1F6140420052F01C /* CYBleScanning.m */; };
+		4F0F57C01F61404C0052F01C /* CYBleConnect.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F0F57BF1F61404C0052F01C /* CYBleConnect.m */; };
+		4F0F57C31F6140580052F01C /* CYBleOTA.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F0F57C21F6140580052F01C /* CYBleOTA.m */; };
+		4F0F57C71F614F280052F01C /* CYBleManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F0F57C61F614F280052F01C /* CYBleManager.m */; };
+		4F1E96E41F6777FF006D2956 /* dfu-2.zip in Resources */ = {isa = PBXBuildFile; fileRef = 4F1E96E31F6777FF006D2956 /* dfu-2.zip */; };
+		4F1E96E61F67801D006D2956 /* healthmeRE.zip in Resources */ = {isa = PBXBuildFile; fileRef = 4F1E96E51F67801D006D2956 /* healthmeRE.zip */; };
+		4F780C471F6629E10099F3DC /* CYBleServiceCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F780C461F6629E10099F3DC /* CYBleServiceCell.m */; };
+		4F780C4A1F66330D0099F3DC /* CYCharacteristicsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F780C491F66330D0099F3DC /* CYCharacteristicsController.m */; };
+		4F780C4D1F66373E0099F3DC /* CYBleCharacterCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F780C4C1F66373E0099F3DC /* CYBleCharacterCell.m */; };
+		4F780C591F667CAC0099F3DC /* CYOTAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F780C581F667CAC0099F3DC /* CYOTAViewController.m */; };
+		4FB3DAAC1F62750B0084120B /* SearchDevicesCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FB3DAA91F62750B0084120B /* SearchDevicesCell.m */; };
+		4FB3DAAD1F62750B0084120B /* UIButton+buttonState.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FB3DAAB1F62750B0084120B /* UIButton+buttonState.m */; };
+		4FB3DAB01F629D3C0084120B /* CYBleOTAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FB3DAAF1F629D3C0084120B /* CYBleOTAViewController.m */; };
+		4FB3DAB31F629D5A0084120B /* CYReadAWriteDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FB3DAB21F629D5A0084120B /* CYReadAWriteDataViewController.m */; };
+		D625E4332D9A48C95DCA3BC4 /* Pods_CYBluetoothManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C172E337131B85B80B4341C6 /* Pods_CYBluetoothManager.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1713F1EA5E24D3BED1C58D41 /* Pods-CYBluetoothManager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CYBluetoothManager.release.xcconfig"; path = "Pods/Target Support Files/Pods-CYBluetoothManager/Pods-CYBluetoothManager.release.xcconfig"; sourceTree = "<group>"; };
+		4F0F579D1F613EFA0052F01C /* CYBluetoothManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CYBluetoothManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F0F57A11F613EFA0052F01C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4F0F57A31F613EFA0052F01C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		4F0F57A41F613EFA0052F01C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4F0F57A61F613EFA0052F01C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		4F0F57A71F613EFA0052F01C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		4F0F57AA1F613EFA0052F01C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4F0F57AC1F613EFA0052F01C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4F0F57AF1F613EFA0052F01C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4F0F57B11F613EFA0052F01C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4F0F57B81F6140340052F01C /* CYBleDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYBleDevice.h; sourceTree = "<group>"; };
+		4F0F57B91F6140340052F01C /* CYBleDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYBleDevice.m; sourceTree = "<group>"; };
+		4F0F57BB1F6140420052F01C /* CYBleScanning.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYBleScanning.h; sourceTree = "<group>"; };
+		4F0F57BC1F6140420052F01C /* CYBleScanning.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYBleScanning.m; sourceTree = "<group>"; };
+		4F0F57BE1F61404C0052F01C /* CYBleConnect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYBleConnect.h; sourceTree = "<group>"; };
+		4F0F57BF1F61404C0052F01C /* CYBleConnect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYBleConnect.m; sourceTree = "<group>"; };
+		4F0F57C11F6140580052F01C /* CYBleOTA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYBleOTA.h; sourceTree = "<group>"; };
+		4F0F57C21F6140580052F01C /* CYBleOTA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYBleOTA.m; sourceTree = "<group>"; };
+		4F0F57C51F614F280052F01C /* CYBleManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYBleManager.h; sourceTree = "<group>"; };
+		4F0F57C61F614F280052F01C /* CYBleManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYBleManager.m; sourceTree = "<group>"; };
+		4F1E96E31F6777FF006D2956 /* dfu-2.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = "dfu-2.zip"; sourceTree = "<group>"; };
+		4F1E96E51F67801D006D2956 /* healthmeRE.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = healthmeRE.zip; sourceTree = "<group>"; };
+		4F780C451F6629E10099F3DC /* CYBleServiceCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYBleServiceCell.h; sourceTree = "<group>"; };
+		4F780C461F6629E10099F3DC /* CYBleServiceCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYBleServiceCell.m; sourceTree = "<group>"; };
+		4F780C481F66330D0099F3DC /* CYCharacteristicsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYCharacteristicsController.h; sourceTree = "<group>"; };
+		4F780C491F66330D0099F3DC /* CYCharacteristicsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYCharacteristicsController.m; sourceTree = "<group>"; };
+		4F780C4B1F66373E0099F3DC /* CYBleCharacterCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYBleCharacterCell.h; sourceTree = "<group>"; };
+		4F780C4C1F66373E0099F3DC /* CYBleCharacterCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYBleCharacterCell.m; sourceTree = "<group>"; };
+		4F780C571F667CAC0099F3DC /* CYOTAViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYOTAViewController.h; sourceTree = "<group>"; };
+		4F780C581F667CAC0099F3DC /* CYOTAViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYOTAViewController.m; sourceTree = "<group>"; };
+		4FB3DAA41F6225F00084120B /* CYBlock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CYBlock.h; sourceTree = "<group>"; };
+		4FB3DAA81F62750B0084120B /* SearchDevicesCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchDevicesCell.h; sourceTree = "<group>"; };
+		4FB3DAA91F62750B0084120B /* SearchDevicesCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchDevicesCell.m; sourceTree = "<group>"; };
+		4FB3DAAA1F62750B0084120B /* UIButton+buttonState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+buttonState.h"; sourceTree = "<group>"; };
+		4FB3DAAB1F62750B0084120B /* UIButton+buttonState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+buttonState.m"; sourceTree = "<group>"; };
+		4FB3DAAE1F629D3C0084120B /* CYBleOTAViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYBleOTAViewController.h; sourceTree = "<group>"; };
+		4FB3DAAF1F629D3C0084120B /* CYBleOTAViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYBleOTAViewController.m; sourceTree = "<group>"; };
+		4FB3DAB11F629D5A0084120B /* CYReadAWriteDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYReadAWriteDataViewController.h; sourceTree = "<group>"; };
+		4FB3DAB21F629D5A0084120B /* CYReadAWriteDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYReadAWriteDataViewController.m; sourceTree = "<group>"; };
+		8DA9B8082B803C4328EF8B21 /* Pods-CYBluetoothManager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CYBluetoothManager.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CYBluetoothManager/Pods-CYBluetoothManager.debug.xcconfig"; sourceTree = "<group>"; };
+		C172E337131B85B80B4341C6 /* Pods_CYBluetoothManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CYBluetoothManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4F0F579A1F613EFA0052F01C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D625E4332D9A48C95DCA3BC4 /* Pods_CYBluetoothManager.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		498996F91F75EFB1C88AC620 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C172E337131B85B80B4341C6 /* Pods_CYBluetoothManager.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4F0F57941F613EFA0052F01C = {
+			isa = PBXGroup;
+			children = (
+				4F0F579F1F613EFA0052F01C /* CYBluetoothManager */,
+				4F0F579E1F613EFA0052F01C /* Products */,
+				514F1E9E46E7DEDBF4679A60 /* Pods */,
+				498996F91F75EFB1C88AC620 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4F0F579E1F613EFA0052F01C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4F0F579D1F613EFA0052F01C /* CYBluetoothManager.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4F0F579F1F613EFA0052F01C /* CYBluetoothManager */ = {
+			isa = PBXGroup;
+			children = (
+				4F0F57A31F613EFA0052F01C /* AppDelegate.h */,
+				4F0F57A41F613EFA0052F01C /* AppDelegate.m */,
+				4F0F57A61F613EFA0052F01C /* ViewController.h */,
+				4F0F57A71F613EFA0052F01C /* ViewController.m */,
+				4FB3DAA81F62750B0084120B /* SearchDevicesCell.h */,
+				4FB3DAA91F62750B0084120B /* SearchDevicesCell.m */,
+				4FB3DAAA1F62750B0084120B /* UIButton+buttonState.h */,
+				4FB3DAAB1F62750B0084120B /* UIButton+buttonState.m */,
+				4FB3DAAE1F629D3C0084120B /* CYBleOTAViewController.h */,
+				4FB3DAAF1F629D3C0084120B /* CYBleOTAViewController.m */,
+				4FB3DAB11F629D5A0084120B /* CYReadAWriteDataViewController.h */,
+				4FB3DAB21F629D5A0084120B /* CYReadAWriteDataViewController.m */,
+				4F780C481F66330D0099F3DC /* CYCharacteristicsController.h */,
+				4F780C491F66330D0099F3DC /* CYCharacteristicsController.m */,
+				4F780C571F667CAC0099F3DC /* CYOTAViewController.h */,
+				4F780C581F667CAC0099F3DC /* CYOTAViewController.m */,
+				4F780C451F6629E10099F3DC /* CYBleServiceCell.h */,
+				4F780C461F6629E10099F3DC /* CYBleServiceCell.m */,
+				4F780C4B1F66373E0099F3DC /* CYBleCharacterCell.h */,
+				4F780C4C1F66373E0099F3DC /* CYBleCharacterCell.m */,
+				4F1E96E51F67801D006D2956 /* healthmeRE.zip */,
+				4F1E96E31F6777FF006D2956 /* dfu-2.zip */,
+				4F0F57A91F613EFA0052F01C /* Main.storyboard */,
+				4F0F57B71F613F300052F01C /* CYBleManager */,
+				4F0F57AC1F613EFA0052F01C /* Assets.xcassets */,
+				4F0F57AE1F613EFA0052F01C /* LaunchScreen.storyboard */,
+				4F0F57B11F613EFA0052F01C /* Info.plist */,
+				4F0F57A01F613EFA0052F01C /* Supporting Files */,
+			);
+			path = CYBluetoothManager;
+			sourceTree = "<group>";
+		};
+		4F0F57A01F613EFA0052F01C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4F0F57A11F613EFA0052F01C /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4F0F57B71F613F300052F01C /* CYBleManager */ = {
+			isa = PBXGroup;
+			children = (
+				4F0F57C51F614F280052F01C /* CYBleManager.h */,
+				4F0F57C61F614F280052F01C /* CYBleManager.m */,
+				4FB3DAA41F6225F00084120B /* CYBlock.h */,
+				4F0F57BB1F6140420052F01C /* CYBleScanning.h */,
+				4F0F57BC1F6140420052F01C /* CYBleScanning.m */,
+				4F0F57B81F6140340052F01C /* CYBleDevice.h */,
+				4F0F57B91F6140340052F01C /* CYBleDevice.m */,
+				4F0F57BE1F61404C0052F01C /* CYBleConnect.h */,
+				4F0F57BF1F61404C0052F01C /* CYBleConnect.m */,
+				4F0F57C11F6140580052F01C /* CYBleOTA.h */,
+				4F0F57C21F6140580052F01C /* CYBleOTA.m */,
+			);
+			path = CYBleManager;
+			sourceTree = "<group>";
+		};
+		514F1E9E46E7DEDBF4679A60 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8DA9B8082B803C4328EF8B21 /* Pods-CYBluetoothManager.debug.xcconfig */,
+				1713F1EA5E24D3BED1C58D41 /* Pods-CYBluetoothManager.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4F0F579C1F613EFA0052F01C /* CYBluetoothManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4F0F57B41F613EFA0052F01C /* Build configuration list for PBXNativeTarget "CYBluetoothManager" */;
+			buildPhases = (
+				F7384DE7E08DF043AA9D6E69 /* [CP] Check Pods Manifest.lock */,
+				4F0F57991F613EFA0052F01C /* Sources */,
+				4F0F579A1F613EFA0052F01C /* Frameworks */,
+				4F0F579B1F613EFA0052F01C /* Resources */,
+				5073977E8950AE810A13CD20 /* [CP] Embed Pods Frameworks */,
+				8F49CBA0C431BEA7FCD5E897 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CYBluetoothManager;
+			productName = CYBluetoothManager;
+			productReference = 4F0F579D1F613EFA0052F01C /* CYBluetoothManager.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4F0F57951F613EFA0052F01C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = CY;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "深圳前海全民健康科技股份有限公司";
+				TargetAttributes = {
+					4F0F579C1F613EFA0052F01C = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 3E4YNVWNYC;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 4F0F57981F613EFA0052F01C /* Build configuration list for PBXProject "CYBluetoothManager" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4F0F57941F613EFA0052F01C;
+			productRefGroup = 4F0F579E1F613EFA0052F01C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4F0F579C1F613EFA0052F01C /* CYBluetoothManager */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4F0F579B1F613EFA0052F01C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F0F57B01F613EFA0052F01C /* LaunchScreen.storyboard in Resources */,
+				4F0F57AD1F613EFA0052F01C /* Assets.xcassets in Resources */,
+				4F0F57AB1F613EFA0052F01C /* Main.storyboard in Resources */,
+				4F1E96E61F67801D006D2956 /* healthmeRE.zip in Resources */,
+				4F1E96E41F6777FF006D2956 /* dfu-2.zip in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5073977E8950AE810A13CD20 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CYBluetoothManager/Pods-CYBluetoothManager-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8F49CBA0C431BEA7FCD5E897 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CYBluetoothManager/Pods-CYBluetoothManager-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F7384DE7E08DF043AA9D6E69 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4F0F57991F613EFA0052F01C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F780C4A1F66330D0099F3DC /* CYCharacteristicsController.m in Sources */,
+				4F780C471F6629E10099F3DC /* CYBleServiceCell.m in Sources */,
+				4FB3DAB31F629D5A0084120B /* CYReadAWriteDataViewController.m in Sources */,
+				4F0F57C31F6140580052F01C /* CYBleOTA.m in Sources */,
+				4F0F57A81F613EFA0052F01C /* ViewController.m in Sources */,
+				4FB3DAB01F629D3C0084120B /* CYBleOTAViewController.m in Sources */,
+				4F0F57A51F613EFA0052F01C /* AppDelegate.m in Sources */,
+				4FB3DAAC1F62750B0084120B /* SearchDevicesCell.m in Sources */,
+				4F0F57C71F614F280052F01C /* CYBleManager.m in Sources */,
+				4FB3DAAD1F62750B0084120B /* UIButton+buttonState.m in Sources */,
+				4F0F57A21F613EFA0052F01C /* main.m in Sources */,
+				4F780C4D1F66373E0099F3DC /* CYBleCharacterCell.m in Sources */,
+				4F0F57BD1F6140420052F01C /* CYBleScanning.m in Sources */,
+				4F0F57C01F61404C0052F01C /* CYBleConnect.m in Sources */,
+				4F0F57BA1F6140340052F01C /* CYBleDevice.m in Sources */,
+				4F780C591F667CAC0099F3DC /* CYOTAViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4F0F57A91F613EFA0052F01C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4F0F57AA1F613EFA0052F01C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4F0F57AE1F613EFA0052F01C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4F0F57AF1F613EFA0052F01C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4F0F57B21F613EFA0052F01C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4F0F57B31F613EFA0052F01C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4F0F57B51F613EFA0052F01C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8DA9B8082B803C4328EF8B21 /* Pods-CYBluetoothManager.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEFINES_MODULE = NO;
+				DEVELOPMENT_TEAM = 3E4YNVWNYC;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CYBluetoothManager/CYBleManager",
+				);
+				INFOPLIST_FILE = CYBluetoothManager/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.healthme.CYBluetoothManager;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(PODS_ROOT)/**";
+			};
+			name = Debug;
+		};
+		4F0F57B61F613EFA0052F01C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1713F1EA5E24D3BED1C58D41 /* Pods-CYBluetoothManager.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEFINES_MODULE = NO;
+				DEVELOPMENT_TEAM = 3E4YNVWNYC;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CYBluetoothManager/CYBleManager",
+				);
+				INFOPLIST_FILE = CYBluetoothManager/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.healthme.CYBluetoothManager;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(PODS_ROOT)/**";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4F0F57981F613EFA0052F01C /* Build configuration list for PBXProject "CYBluetoothManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F0F57B21F613EFA0052F01C /* Debug */,
+				4F0F57B31F613EFA0052F01C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4F0F57B41F613EFA0052F01C /* Build configuration list for PBXNativeTarget "CYBluetoothManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F0F57B51F613EFA0052F01C /* Debug */,
+				4F0F57B61F613EFA0052F01C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4F0F57951F613EFA0052F01C /* Project object */;
+}

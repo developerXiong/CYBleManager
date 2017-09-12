@@ -1,0 +1,6 @@
+framework module Pods_CYBluetoothManager {
+  umbrella header "Pods-CYBluetoothManager-umbrella.h"
+
+  export *
+  module * { export * }
+}
