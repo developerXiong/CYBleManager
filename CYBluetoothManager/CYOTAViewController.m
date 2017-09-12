@@ -31,13 +31,13 @@
     [[CYBleManager manager] startScan:10 services:@[[CBUUID UUIDWithString:@"FE59"]] isFilter:NO result:^(NSArray<CBPeripheral *> *peripherals) {
         CBPeripheral *peripheral = peripherals[0];
         [[CYBleManager manager] firmwareUpdateWithDFUPeripheral:peripheral filePath:filePath response:^(NSString *message, CYDFUState state) {
-            NSLog(@"%@<--->%ld", message, state);
+            NSLog(@"%@<--->%ld", message, (unsigned long)state);
             _logLabel.text = message;
         } progress:^(NSInteger part, NSInteger totalPart, NSInteger progress) {
-            NSLog(@"%ld---%ld---%ld", part, totalPart, progress);
+            NSLog(@"%ld---%ld---%ld", part, totalPart, (long)progress);
             _progress.progress = progress/100.0;
-            _partLabel.text = [NSString stringWithFormat:@"part:%ld/%ld", part, totalPart];
-            _progressLabel.text = [NSString stringWithFormat:@"prgress:%ld%%", progress];
+            _partLabel.text = [NSString stringWithFormat:@"part:%ld/%ld", (long)part, totalPart];
+            _progressLabel.text = [NSString stringWithFormat:@"prgress:%ld%%", (long)progress];
         }];
     }];
     
