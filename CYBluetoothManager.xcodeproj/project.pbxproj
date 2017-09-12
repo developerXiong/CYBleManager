@@ -13,13 +13,14 @@
 		4F0F57AB1F613EFA0052F01C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F0F57A91F613EFA0052F01C /* Main.storyboard */; };
 		4F0F57AD1F613EFA0052F01C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F0F57AC1F613EFA0052F01C /* Assets.xcassets */; };
 		4F0F57B01F613EFA0052F01C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F0F57AE1F613EFA0052F01C /* LaunchScreen.storyboard */; };
-		4F0F57BA1F6140340052F01C /* CYBleDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F0F57B91F6140340052F01C /* CYBleDevice.m */; };
-		4F0F57BD1F6140420052F01C /* CYBleScanning.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F0F57BC1F6140420052F01C /* CYBleScanning.m */; };
-		4F0F57C01F61404C0052F01C /* CYBleConnect.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F0F57BF1F61404C0052F01C /* CYBleConnect.m */; };
-		4F0F57C31F6140580052F01C /* CYBleOTA.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F0F57C21F6140580052F01C /* CYBleOTA.m */; };
-		4F0F57C71F614F280052F01C /* CYBleManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F0F57C61F614F280052F01C /* CYBleManager.m */; };
 		4F1E96E41F6777FF006D2956 /* dfu-2.zip in Resources */ = {isa = PBXBuildFile; fileRef = 4F1E96E31F6777FF006D2956 /* dfu-2.zip */; };
 		4F1E96E61F67801D006D2956 /* healthmeRE.zip in Resources */ = {isa = PBXBuildFile; fileRef = 4F1E96E51F67801D006D2956 /* healthmeRE.zip */; };
+		4F1E97571F680351006D2956 /* .swift-version in Resources */ = {isa = PBXBuildFile; fileRef = 4F1E974B1F680351006D2956 /* .swift-version */; };
+		4F1E97581F680351006D2956 /* CYBleConnect.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F1E974D1F680351006D2956 /* CYBleConnect.m */; };
+		4F1E97591F680351006D2956 /* CYBleDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F1E974F1F680351006D2956 /* CYBleDevice.m */; };
+		4F1E975A1F680351006D2956 /* CYBleManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F1E97511F680351006D2956 /* CYBleManager.m */; };
+		4F1E975B1F680351006D2956 /* CYBleOTA.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F1E97531F680351006D2956 /* CYBleOTA.m */; };
+		4F1E975C1F680351006D2956 /* CYBleScanning.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F1E97551F680351006D2956 /* CYBleScanning.m */; };
 		4F780C471F6629E10099F3DC /* CYBleServiceCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F780C461F6629E10099F3DC /* CYBleServiceCell.m */; };
 		4F780C4A1F66330D0099F3DC /* CYCharacteristicsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F780C491F66330D0099F3DC /* CYCharacteristicsController.m */; };
 		4F780C4D1F66373E0099F3DC /* CYBleCharacterCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F780C4C1F66373E0099F3DC /* CYBleCharacterCell.m */; };
@@ -43,18 +44,20 @@
 		4F0F57AC1F613EFA0052F01C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4F0F57AF1F613EFA0052F01C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4F0F57B11F613EFA0052F01C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4F0F57B81F6140340052F01C /* CYBleDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYBleDevice.h; sourceTree = "<group>"; };
-		4F0F57B91F6140340052F01C /* CYBleDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYBleDevice.m; sourceTree = "<group>"; };
-		4F0F57BB1F6140420052F01C /* CYBleScanning.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYBleScanning.h; sourceTree = "<group>"; };
-		4F0F57BC1F6140420052F01C /* CYBleScanning.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYBleScanning.m; sourceTree = "<group>"; };
-		4F0F57BE1F61404C0052F01C /* CYBleConnect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYBleConnect.h; sourceTree = "<group>"; };
-		4F0F57BF1F61404C0052F01C /* CYBleConnect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYBleConnect.m; sourceTree = "<group>"; };
-		4F0F57C11F6140580052F01C /* CYBleOTA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYBleOTA.h; sourceTree = "<group>"; };
-		4F0F57C21F6140580052F01C /* CYBleOTA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYBleOTA.m; sourceTree = "<group>"; };
-		4F0F57C51F614F280052F01C /* CYBleManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYBleManager.h; sourceTree = "<group>"; };
-		4F0F57C61F614F280052F01C /* CYBleManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYBleManager.m; sourceTree = "<group>"; };
 		4F1E96E31F6777FF006D2956 /* dfu-2.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = "dfu-2.zip"; sourceTree = "<group>"; };
 		4F1E96E51F67801D006D2956 /* healthmeRE.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = healthmeRE.zip; sourceTree = "<group>"; };
+		4F1E974B1F680351006D2956 /* .swift-version */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ".swift-version"; sourceTree = "<group>"; };
+		4F1E974C1F680351006D2956 /* CYBleConnect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYBleConnect.h; sourceTree = "<group>"; };
+		4F1E974D1F680351006D2956 /* CYBleConnect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYBleConnect.m; sourceTree = "<group>"; };
+		4F1E974E1F680351006D2956 /* CYBleDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYBleDevice.h; sourceTree = "<group>"; };
+		4F1E974F1F680351006D2956 /* CYBleDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYBleDevice.m; sourceTree = "<group>"; };
+		4F1E97501F680351006D2956 /* CYBleManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYBleManager.h; sourceTree = "<group>"; };
+		4F1E97511F680351006D2956 /* CYBleManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYBleManager.m; sourceTree = "<group>"; };
+		4F1E97521F680351006D2956 /* CYBleOTA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYBleOTA.h; sourceTree = "<group>"; };
+		4F1E97531F680351006D2956 /* CYBleOTA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYBleOTA.m; sourceTree = "<group>"; };
+		4F1E97541F680351006D2956 /* CYBleScanning.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYBleScanning.h; sourceTree = "<group>"; };
+		4F1E97551F680351006D2956 /* CYBleScanning.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYBleScanning.m; sourceTree = "<group>"; };
+		4F1E97561F680351006D2956 /* CYBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYBlock.h; sourceTree = "<group>"; };
 		4F780C451F6629E10099F3DC /* CYBleServiceCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYBleServiceCell.h; sourceTree = "<group>"; };
 		4F780C461F6629E10099F3DC /* CYBleServiceCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYBleServiceCell.m; sourceTree = "<group>"; };
 		4F780C481F66330D0099F3DC /* CYCharacteristicsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYCharacteristicsController.h; sourceTree = "<group>"; };
@@ -63,7 +66,6 @@
 		4F780C4C1F66373E0099F3DC /* CYBleCharacterCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYBleCharacterCell.m; sourceTree = "<group>"; };
 		4F780C571F667CAC0099F3DC /* CYOTAViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYOTAViewController.h; sourceTree = "<group>"; };
 		4F780C581F667CAC0099F3DC /* CYOTAViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYOTAViewController.m; sourceTree = "<group>"; };
-		4FB3DAA41F6225F00084120B /* CYBlock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CYBlock.h; sourceTree = "<group>"; };
 		4FB3DAA81F62750B0084120B /* SearchDevicesCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchDevicesCell.h; sourceTree = "<group>"; };
 		4FB3DAA91F62750B0084120B /* SearchDevicesCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchDevicesCell.m; sourceTree = "<group>"; };
 		4FB3DAAA1F62750B0084120B /* UIButton+buttonState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+buttonState.h"; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 		4F0F57941F613EFA0052F01C = {
 			isa = PBXGroup;
 			children = (
+				4F1E974A1F680351006D2956 /* CYBleManager */,
 				4F0F579F1F613EFA0052F01C /* CYBluetoothManager */,
 				4F0F579E1F613EFA0052F01C /* Products */,
 				514F1E9E46E7DEDBF4679A60 /* Pods */,
@@ -140,7 +143,6 @@
 				4F1E96E51F67801D006D2956 /* healthmeRE.zip */,
 				4F1E96E31F6777FF006D2956 /* dfu-2.zip */,
 				4F0F57A91F613EFA0052F01C /* Main.storyboard */,
-				4F0F57B71F613F300052F01C /* CYBleManager */,
 				4F0F57AC1F613EFA0052F01C /* Assets.xcassets */,
 				4F0F57AE1F613EFA0052F01C /* LaunchScreen.storyboard */,
 				4F0F57B11F613EFA0052F01C /* Info.plist */,
@@ -157,20 +159,21 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		4F0F57B71F613F300052F01C /* CYBleManager */ = {
+		4F1E974A1F680351006D2956 /* CYBleManager */ = {
 			isa = PBXGroup;
 			children = (
-				4F0F57C51F614F280052F01C /* CYBleManager.h */,
-				4F0F57C61F614F280052F01C /* CYBleManager.m */,
-				4FB3DAA41F6225F00084120B /* CYBlock.h */,
-				4F0F57BB1F6140420052F01C /* CYBleScanning.h */,
-				4F0F57BC1F6140420052F01C /* CYBleScanning.m */,
-				4F0F57B81F6140340052F01C /* CYBleDevice.h */,
-				4F0F57B91F6140340052F01C /* CYBleDevice.m */,
-				4F0F57BE1F61404C0052F01C /* CYBleConnect.h */,
-				4F0F57BF1F61404C0052F01C /* CYBleConnect.m */,
-				4F0F57C11F6140580052F01C /* CYBleOTA.h */,
-				4F0F57C21F6140580052F01C /* CYBleOTA.m */,
+				4F1E974B1F680351006D2956 /* .swift-version */,
+				4F1E974C1F680351006D2956 /* CYBleConnect.h */,
+				4F1E974D1F680351006D2956 /* CYBleConnect.m */,
+				4F1E974E1F680351006D2956 /* CYBleDevice.h */,
+				4F1E974F1F680351006D2956 /* CYBleDevice.m */,
+				4F1E97501F680351006D2956 /* CYBleManager.h */,
+				4F1E97511F680351006D2956 /* CYBleManager.m */,
+				4F1E97521F680351006D2956 /* CYBleOTA.h */,
+				4F1E97531F680351006D2956 /* CYBleOTA.m */,
+				4F1E97541F680351006D2956 /* CYBleScanning.h */,
+				4F1E97551F680351006D2956 /* CYBleScanning.m */,
+				4F1E97561F680351006D2956 /* CYBlock.h */,
 			);
 			path = CYBleManager;
 			sourceTree = "<group>";
@@ -251,6 +254,7 @@
 				4F0F57AD1F613EFA0052F01C /* Assets.xcassets in Resources */,
 				4F0F57AB1F613EFA0052F01C /* Main.storyboard in Resources */,
 				4F1E96E61F67801D006D2956 /* healthmeRE.zip in Resources */,
+				4F1E97571F680351006D2956 /* .swift-version in Resources */,
 				4F1E96E41F6777FF006D2956 /* dfu-2.zip in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -313,18 +317,18 @@
 				4F780C4A1F66330D0099F3DC /* CYCharacteristicsController.m in Sources */,
 				4F780C471F6629E10099F3DC /* CYBleServiceCell.m in Sources */,
 				4FB3DAB31F629D5A0084120B /* CYReadAWriteDataViewController.m in Sources */,
-				4F0F57C31F6140580052F01C /* CYBleOTA.m in Sources */,
 				4F0F57A81F613EFA0052F01C /* ViewController.m in Sources */,
 				4FB3DAB01F629D3C0084120B /* CYBleOTAViewController.m in Sources */,
 				4F0F57A51F613EFA0052F01C /* AppDelegate.m in Sources */,
 				4FB3DAAC1F62750B0084120B /* SearchDevicesCell.m in Sources */,
-				4F0F57C71F614F280052F01C /* CYBleManager.m in Sources */,
+				4F1E975A1F680351006D2956 /* CYBleManager.m in Sources */,
 				4FB3DAAD1F62750B0084120B /* UIButton+buttonState.m in Sources */,
 				4F0F57A21F613EFA0052F01C /* main.m in Sources */,
+				4F1E975C1F680351006D2956 /* CYBleScanning.m in Sources */,
 				4F780C4D1F66373E0099F3DC /* CYBleCharacterCell.m in Sources */,
-				4F0F57BD1F6140420052F01C /* CYBleScanning.m in Sources */,
-				4F0F57C01F61404C0052F01C /* CYBleConnect.m in Sources */,
-				4F0F57BA1F6140340052F01C /* CYBleDevice.m in Sources */,
+				4F1E975B1F680351006D2956 /* CYBleOTA.m in Sources */,
+				4F1E97591F680351006D2956 /* CYBleDevice.m in Sources */,
+				4F1E97581F680351006D2956 /* CYBleConnect.m in Sources */,
 				4F780C591F667CAC0099F3DC /* CYOTAViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

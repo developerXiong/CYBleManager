@@ -78,7 +78,7 @@ s.platform     = :ios, "8.0"
 #  Supports git, hg, bzr, svn and HTTP.
 #
 
-s.source       = { :git => "https://github.com/developerXiong/CYBleManager.git", :tag => "#{s.version}" }
+s.source = { :git => "https://github.com/developerXiong/CYBleManager.git", :tag => "#{s.version}" }
 
 
 # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -89,7 +89,7 @@ s.source       = { :git => "https://github.com/developerXiong/CYBleManager.git",
 #  Not including the public_header_files will make all headers public.
 #
 
-s.source_files  = "CYBluetoothManager/CYBleManager", "CYBluetoothManager/CYBleManager/**/*.{h,m}", "CYBluetoothManager/CYBleManager/*"
+s.source_files  = "./CYBleManager/*"
 #s.exclude_files = "CYBleManager/Exclude"
 
 # s.public_header_files = "Classes/**/*.h"
