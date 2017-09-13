@@ -54,14 +54,18 @@
  连接蓝牙设备
  
  @param time 连接超时时间 默认5秒
- @param state 连接状态
  */
-- (void)connectBle:(CBPeripheral *)peripheral timeout:(int)time state:(CYBleManagerConnect)state;
+- (void)connectBle:(CBPeripheral *)peripheral timeout:(int)time;
 
 /**
  断开蓝牙连接
  */
-- (void)disconnectBle:(CBPeripheral *)peripheral state:(CYBleManagerDisconnect)state;
+- (void)disconnectBle:(CBPeripheral *)peripheral;
+
+/**
+ 监测蓝牙连接状态
+ */
+- (void)moniterBleConnectState:(CYBleManagerConnect)state;
 
 /**
  使能通知

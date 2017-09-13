@@ -12,6 +12,8 @@
 
 @interface CYBleOTA : NSObject
 
+@property (nonatomic, strong) CBPeripheral *dfuPeripheral;
+
 + (instancetype)ota;
 
 /**

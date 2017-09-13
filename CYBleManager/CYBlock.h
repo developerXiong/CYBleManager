@@ -14,13 +14,10 @@ typedef enum : NSUInteger {
     CYBleManagerConnected,
     CYBleManagerConnectFail,
     CYBleManagerConnectTimeout,
+    CYBleManagerDisconnecting,
+    CYBleManagerDisconnected,           // 手动断开蓝牙连接
     CYBleManagerDisconnectAccident      // 意外断开蓝牙连接
 } CYBleManagerConnectState;
-
-typedef enum : NSUInteger {
-    CYBleManagerDisconnecting,
-    CYBleManagerDisconnected
-} CYBleManagerDisconnectState;
 
 typedef enum : NSUInteger {
     CYDFUStateStart,
@@ -31,7 +28,6 @@ typedef enum : NSUInteger {
 
 // 连接状态
 typedef void(^CYBleManagerConnect)(CYBleManagerConnectState state);
-typedef void(^CYBleManagerDisconnect)(CYBleManagerDisconnectState state);
 
 // 向特征写数据
 typedef void(^CYBleManagerWriteResponse)(NSData *data);

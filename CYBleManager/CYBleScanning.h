@@ -20,8 +20,6 @@
 
 @property (nonatomic, strong) CYBleManagerConnect connectState;
 
-@property (nonatomic, strong) CYBleManagerDisconnect disconnectState;
-
 @property (nonatomic, assign) BOOL isManualDisconnect;
 
 @property (nonatomic, assign) BOOL isAutoConnect;

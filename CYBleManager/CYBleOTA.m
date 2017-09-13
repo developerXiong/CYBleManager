@@ -20,6 +20,8 @@
 
 @property (nonatomic, strong) CYBleManagerOTAProgress progress;
 
+@property (nonatomic, strong) NSURL *filePath;
+
 @end
 
 @implementation CYBleOTA
@@ -33,30 +35,36 @@
     return instance;
 }
 
+- (void)setDfuPeripheral:(CBPeripheral *)dfuPeripheral {
+    _dfuPeripheral = dfuPeripheral;
+    
+    if (_filePath) {
+        DFUServiceInitiator *initiator = [[DFUServiceInitiator alloc] initWithCentralManager:[CYBleScanning scanning].manager target:dfuPeripheral];
+        
+        initiator.delegate = self;
+        initiator.progressDelegate = self;
+        initiator.logger = self;
+        
+        // This enables the experimental Buttonless DFU feature from SDK 12.
+        // Please, read the field documentation before use.
+        initiator.enableUnsafeExperimentalButtonlessServiceInSecureDfu = true;
+        DFUFirmware *firmware = nil;
+        
+        firmware = [[DFUFirmware alloc] initWithUrlToZipFile:_filePath];
+        
+        _dfuController = [[initiator withFirmware:firmware] start];
+    }
+}
+
 - (void)firmwareUpdateWithDFUPeripheral:(CBPeripheral *)peripheral filePath:(NSURL *)filePath response:(CYBleManagerOTAResponse)response progress:(CYBleManagerOTAProgress)progress {
     if (!peripheral || !filePath) {
         return;
     }
     _response = response;
     _progress = progress;
-    [[CYBleConnect connect] connectBle:peripheral timeout:5 state:^(CYBleManagerConnectState state) {
-        if (state == CYBleManagerConnected) {            
-            DFUServiceInitiator *initiator = [[DFUServiceInitiator alloc] initWithCentralManager:[CYBleScanning scanning].manager target:peripheral];
-            
-            initiator.delegate = self;
-            initiator.progressDelegate = self;
-            initiator.logger = self;
-            
-            // This enables the experimental Buttonless DFU feature from SDK 12.
-            // Please, read the field documentation before use.
-            initiator.enableUnsafeExperimentalButtonlessServiceInSecureDfu = true;
-            DFUFirmware *firmware = nil;
-            
-            firmware = [[DFUFirmware alloc] initWithUrlToZipFile:filePath];
-            
-            _dfuController = [[initiator withFirmware:firmware] start];
-        }
-    }];
+    _filePath = filePath;
+    [[CYBleConnect connect] connectBle:peripheral timeout:5];
+    
 }
 
 #pragma mark - DFUServiceDelegate
@@ -104,6 +112,7 @@
         {
             // 升级完成
             _dfuController = nil;
+            _filePath = nil;
             if (_response) {
                 _response(@"", CYDFUStateCompleted);
             }

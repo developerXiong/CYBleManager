@@ -27,7 +27,6 @@
 		4F780C591F667CAC0099F3DC /* CYOTAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F780C581F667CAC0099F3DC /* CYOTAViewController.m */; };
 		4FB3DAAC1F62750B0084120B /* SearchDevicesCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FB3DAA91F62750B0084120B /* SearchDevicesCell.m */; };
 		4FB3DAAD1F62750B0084120B /* UIButton+buttonState.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FB3DAAB1F62750B0084120B /* UIButton+buttonState.m */; };
-		4FB3DAB01F629D3C0084120B /* CYBleOTAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FB3DAAF1F629D3C0084120B /* CYBleOTAViewController.m */; };
 		4FB3DAB31F629D5A0084120B /* CYReadAWriteDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FB3DAB21F629D5A0084120B /* CYReadAWriteDataViewController.m */; };
 		D625E4332D9A48C95DCA3BC4 /* Pods_CYBluetoothManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C172E337131B85B80B4341C6 /* Pods_CYBluetoothManager.framework */; };
 /* End PBXBuildFile section */
@@ -70,8 +69,6 @@
 		4FB3DAA91F62750B0084120B /* SearchDevicesCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchDevicesCell.m; sourceTree = "<group>"; };
 		4FB3DAAA1F62750B0084120B /* UIButton+buttonState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+buttonState.h"; sourceTree = "<group>"; };
 		4FB3DAAB1F62750B0084120B /* UIButton+buttonState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+buttonState.m"; sourceTree = "<group>"; };
-		4FB3DAAE1F629D3C0084120B /* CYBleOTAViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYBleOTAViewController.h; sourceTree = "<group>"; };
-		4FB3DAAF1F629D3C0084120B /* CYBleOTAViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYBleOTAViewController.m; sourceTree = "<group>"; };
 		4FB3DAB11F629D5A0084120B /* CYReadAWriteDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYReadAWriteDataViewController.h; sourceTree = "<group>"; };
 		4FB3DAB21F629D5A0084120B /* CYReadAWriteDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYReadAWriteDataViewController.m; sourceTree = "<group>"; };
 		8DA9B8082B803C4328EF8B21 /* Pods-CYBluetoothManager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CYBluetoothManager.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CYBluetoothManager/Pods-CYBluetoothManager.debug.xcconfig"; sourceTree = "<group>"; };
@@ -128,8 +125,6 @@
 				4FB3DAA91F62750B0084120B /* SearchDevicesCell.m */,
 				4FB3DAAA1F62750B0084120B /* UIButton+buttonState.h */,
 				4FB3DAAB1F62750B0084120B /* UIButton+buttonState.m */,
-				4FB3DAAE1F629D3C0084120B /* CYBleOTAViewController.h */,
-				4FB3DAAF1F629D3C0084120B /* CYBleOTAViewController.m */,
 				4FB3DAB11F629D5A0084120B /* CYReadAWriteDataViewController.h */,
 				4FB3DAB21F629D5A0084120B /* CYReadAWriteDataViewController.m */,
 				4F780C481F66330D0099F3DC /* CYCharacteristicsController.h */,
@@ -318,7 +313,6 @@
 				4F780C471F6629E10099F3DC /* CYBleServiceCell.m in Sources */,
 				4FB3DAB31F629D5A0084120B /* CYReadAWriteDataViewController.m in Sources */,
 				4F0F57A81F613EFA0052F01C /* ViewController.m in Sources */,
-				4FB3DAB01F629D3C0084120B /* CYBleOTAViewController.m in Sources */,
 				4F0F57A51F613EFA0052F01C /* AppDelegate.m in Sources */,
 				4FB3DAAC1F62750B0084120B /* SearchDevicesCell.m in Sources */,
 				4F1E975A1F680351006D2956 /* CYBleManager.m in Sources */,

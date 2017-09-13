@@ -30,12 +30,61 @@
     
     self.refreshControl = [[UIRefreshControl alloc] init];
     [self.refreshControl addTarget:self action:@selector(initBle) forControlEvents:UIControlEventValueChanged];
+    
+    [self moniterBleConnectState];
 
 }
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     
+}
+
+- (void)moniterBleConnectState {
+    [[CYBleManager manager] moniterBleConnectState:^(CYBleManagerConnectState state) {
+        switch (state) {
+            case CYBleManagerConnected:
+            {
+                NSLog(@"连接成功");
+                _selectBtn.cy_state = ButtonStateDidConnect;
+            }
+                break;
+            case CYBleManagerConnecting:
+            {
+                NSLog(@"连接中");
+                _selectBtn.cy_state = ButtonStateConnecting;
+            }
+                break;
+            case CYBleManagerConnectFail:
+            {
+                NSLog(@"连接失败");
+                _selectBtn.cy_state = ButtonStateNormal;
+            }
+                break;
+            case CYBleManagerConnectTimeout:
+            {
+                NSLog(@"连接超时");
+                _selectBtn.cy_state = ButtonStateNormal;
+            }
+                break;
+            case CYBleManagerDisconnectAccident:
+            {
+                NSLog(@"意外断开连接");
+                _selectBtn.cy_state = ButtonStateNormal;
+            }
+                break;
+            case CYBleManagerDisconnected:
+                NSLog(@"手动断开连接");
+                _selectBtn.cy_state = ButtonStateNormal;
+                break;
+            case CYBleManagerDisconnecting:
+                NSLog(@"断开连接中");
+                break;
+                
+            default:
+                break;
+        }
+    }];
 }
 
 - (void)initBle {
@@ -99,20 +148,7 @@
         case ButtonStateDidConnect:
         {
             // 已连接
-            [[CYBleManager manager] disconnectBle:peripheral state:^(CYBleManagerDisconnectState state) {
-                switch (state) {
-                    case CYBleManagerDisconnected:
-                        NSLog(@"手动断开连接");
-                        _selectBtn.cy_state = ButtonStateNormal;
-                        break;
-                    case CYBleManagerDisconnecting:
-                        NSLog(@"断开连接中");
-                        break;
-                        
-                    default:
-                        break;
-                }
-            }];
+            [[CYBleManager manager] disconnectBle:peripheral];
         }
             break;
         case ButtonStateDisconnecting:
@@ -123,43 +159,7 @@
         case ButtonStateNormal:
         {
             //
-            [[CYBleManager manager] connectBle:peripheral timeout:10 state:^(CYBleManagerConnectState state) {
-                switch (state) {
-                    case CYBleManagerConnected:
-                    {
-                        NSLog(@"连接成功");
-                        _selectBtn.cy_state = ButtonStateDidConnect;
-                    }
-                        break;
-                    case CYBleManagerConnecting:
-                    {
-                        NSLog(@"连接中");
-                        _selectBtn.cy_state = ButtonStateConnecting;
-                    }
-                        break;
-                    case CYBleManagerConnectFail:
-                    {
-                        NSLog(@"连接失败");
-                        _selectBtn.cy_state = ButtonStateNormal;
-                    }
-                        break;
-                    case CYBleManagerConnectTimeout:
-                    {
-                        NSLog(@"连接超时");
-                        _selectBtn.cy_state = ButtonStateNormal;
-                    }
-                        break;
-                    case CYBleManagerDisconnectAccident:
-                    {
-                        NSLog(@"意外断开连接");
-                        _selectBtn.cy_state = ButtonStateNormal;
-                    }
-                        break;
-                        
-                    default:
-                        break;
-                }
-            }];
+            [[CYBleManager manager] connectBle:peripheral timeout:10];
         }
             break;
             

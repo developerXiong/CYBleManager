@@ -24,11 +24,13 @@
 /**
  连接蓝牙设备
  */
-- (void)connectBle:(CBPeripheral *)peripheral timeout:(int)time state:(CYBleManagerConnect)state;
+- (void)connectBle:(CBPeripheral *)peripheral timeout:(int)time;
 
 /**
  断开蓝牙连接
  */
-- (void)disconnectBle:(CBPeripheral *)peripheral state:(CYBleManagerDisconnect)state;
+- (void)disconnectBle:(CBPeripheral *)peripheral;
+
+- (void)moniterBleConnectState:(CYBleManagerConnect)state;
 
 @end

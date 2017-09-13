@@ -9,6 +9,7 @@
 #import "CYBleScanning.h"
 #import "CYBleDevice.h"
 #import "CYBleConnect.h"
+#import "CYBleOTA.h"
 
 #define kAutoConnectBleDeviceKey @"CYAutoConnectBleDeviceKey"
 
@@ -53,10 +54,6 @@
 #pragma mark - setter & getter
 - (void)setConnectState:(CYBleManagerConnect)connectState {
     _connectState = connectState;
-}
-
-- (void)setDisconnectState:(CYBleManagerDisconnect)disconnectState {
-    _disconnectState = disconnectState;
 }
 
 - (void)setPeripheralName:(NSString *)peripheralName {
@@ -164,7 +161,7 @@
     if (![uuidStr isEqualToString:peripheral.identifier.UUIDString]) {
         return;
     }
-    [[CYBleConnect connect] connectBle:peripheral timeout:8 state:_connectState];
+    [[CYBleConnect connect] connectBle:peripheral timeout:8];
     
 }
 
@@ -172,6 +169,7 @@
 - (void)centralManager:(CBCentralManager *)central didConnectPeripheral:(CBPeripheral *)peripheral {
 //    NSLog(@"lib-连接成功");
     [CYBleDevice device].peripheral = peripheral;
+    [CYBleOTA ota].dfuPeripheral = peripheral;
     if (_connectState) {
         _connectState(CYBleManagerConnected);
     }
@@ -201,10 +199,9 @@
     if (_connectState) {
         if (!_isManualDisconnect) {
             _connectState(CYBleManagerDisconnectAccident);
+        } else {
+            _connectState(CYBleManagerDisconnected);
         }
-    }
-    if (_isManualDisconnect && _disconnectState) {
-        _disconnectState(CYBleManagerDisconnected);
     }
 }
 

@@ -55,16 +55,14 @@
 
 #pragma mark - public method
 
-- (void)connectBle:(CBPeripheral *)peripheral timeout:(int)time state:(CYBleManagerConnect)state {
+- (void)connectBle:(CBPeripheral *)peripheral timeout:(int)time {
     if (!peripheral) {
         return;
     }
     [CYBleScanning scanning].isManualDisconnect = NO;
     _timeoutTime = time;
-    _connectState = state;
-    [CYBleScanning scanning].connectState = state;
     if ([CYBleDevice device].peripheral) {
-        [self disconnectBle:[CYBleDevice device].peripheral state:nil];   // 一次只允许连接一台蓝牙设备
+        [self disconnectBle:[CYBleDevice device].peripheral];   // 一次只允许连接一台蓝牙设备
     }
     
     [[CYBleScanning scanning].manager connectPeripheral:peripheral options:nil];
@@ -74,16 +72,20 @@
     }
 }
 
-- (void)disconnectBle:(CBPeripheral *)peripheral state:(CYBleManagerDisconnect)state {
+- (void)disconnectBle:(CBPeripheral *)peripheral {
     if (!peripheral) {
         return;
     }
     [self cancelPeripheral:peripheral];
     _isTimeout = NO;
-    [CYBleScanning scanning].disconnectState = state;
-    if (state) {
-        state(CYBleManagerDisconnecting);
+    if (_connectState) {
+        _connectState(CYBleManagerDisconnecting);
     }
+}
+
+- (void)moniterBleConnectState:(CYBleManagerConnect)state {
+    _connectState = state;
+    [CYBleScanning scanning].connectState = state;
 }
 
 - (void)cancelPeripheral:(CBPeripheral *)peripheral {
@@ -99,7 +101,7 @@
             if (_connectState) {
                 _connectState(CYBleManagerConnectTimeout);
             }
-            [self disconnectBle:peripheral state:nil];
+            [self disconnectBle:peripheral];
         }
         _isTimeout = YES;
     });

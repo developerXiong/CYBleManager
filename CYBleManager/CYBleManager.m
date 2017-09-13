@@ -71,12 +71,16 @@
     [[CYBleScanning scanning] stopScan];
 }
 
-- (void)connectBle:(CBPeripheral *)peripheral timeout:(int)time state:(CYBleManagerConnect)state {
-    [[CYBleConnect connect] connectBle:peripheral timeout:time state:state];
+- (void)connectBle:(CBPeripheral *)peripheral timeout:(int)time {
+    [[CYBleConnect connect] connectBle:peripheral timeout:time];
 }
 
-- (void)disconnectBle:(CBPeripheral *)peripheral state:(CYBleManagerDisconnect)state {
-    [[CYBleConnect connect] disconnectBle:peripheral state:state];
+- (void)disconnectBle:(CBPeripheral *)peripheral{
+    [[CYBleConnect connect] disconnectBle:peripheral];
+}
+
+- (void)moniterBleConnectState:(CYBleManagerConnect)state {
+    [[CYBleConnect connect] moniterBleConnectState:state];
 }
 
 - (void)setNotify:(BOOL)n forCharacter:(CBCharacteristic *)c {
