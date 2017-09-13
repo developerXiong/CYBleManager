@@ -28,6 +28,21 @@
 
 **对于Carthage:**
 
+- 更新 **Cartfile** 
+
+```
+github "developerXiong/CYBleManagerLibrary",
+github "NordicSemiconductor/IOS-Pods-DFU-Library"
+```
+
+- 运行命令:
+
+```
+carthage update
+```
+
+- Carthage生成的**CYBleManagerLibrary**, **iOSDFULibrary.framework** and **Zip.framework**三个文件是我们需要使用的
+
 ## 用法
 
 - 扫描蓝牙设备

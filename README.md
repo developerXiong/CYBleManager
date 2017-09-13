@@ -28,6 +28,21 @@ About bluetooth library, contains connection, data transceiver, OTA.
 
 **For Carthage:**
 
+- Update your **Cartfile** with the following contents
+
+    ```
+    github "developerXiong/CYBleManagerLibrary",
+    github "NordicSemiconductor/IOS-Pods-DFU-Library"
+    ```
+
+- run the command:
+    
+    ```
+    carthage update
+    ```
+
+- Carthage will build the **CYBleManagerLibrary**, **iOSDFULibrary.framework** and **Zip.framework** files in **Carthag/Build/**, you may now copy all those files to your project and use the library
+
 ## Usage
 
 - scanning ble
