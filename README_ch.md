@@ -72,6 +72,16 @@ carthage update
     }];
     ```
 
+- 监测蓝牙设备连接状态
+
+    ```
+    [CYBleManager manager] moniterBleConnectState:^(CYBleManagerConnectState state) {
+        // your code
+
+    }];
+    ```
+
+
 - 收发数据
 
     ```

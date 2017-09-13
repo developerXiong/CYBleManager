@@ -57,16 +57,19 @@ About bluetooth library, contains connection, data transceiver, OTA.
 - connect ble
 
     ```
-    [[CYBleManager manager] connectBle:peripheral timeout:10 state:^(CYBleManagerConnectState state) {
-        // your code
-
-    }];
+    [[CYBleManager manager] connectBle:peripheral timeout:10];
     ```
 
 - disconnect ble
 
     ```
-    [[CYBleManager manager] disconnectBle:peripheral state:^(CYBleManagerDisconnectState state) {
+    [[CYBleManager manager] disconnectBle:peripheral];
+    ```
+
+- moniter ble connect state
+
+    ```
+    [CYBleManager manager] moniterBleConnectState:^(CYBleManagerConnectState state) {
         // your code
 
     }];
