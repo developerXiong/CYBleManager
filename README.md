@@ -1,4 +1,4 @@
-# CYBleManager [中文](README_ch.md)
+# CYBleManager  **[中文](README_ch.md)**
 About bluetooth library, contains connection, data transceiver, OTA.
 
 [![Version](http://img.shields.io/cocoapods/v/iOSDFULibrary.svg)](http://cocoapods.org/pods/iOSDFULibrary)

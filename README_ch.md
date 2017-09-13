@@ -1,4 +1,4 @@
-# CYBleManager [English](README.md)
+# CYBleManager  **[English](README.md)**
 关于蓝牙库，包含连接，数据收发器，OTA。
 
 [![Version](http://img.shields.io/cocoapods/v/iOSDFULibrary.svg)](http://cocoapods.org/pods/iOSDFULibrary)
