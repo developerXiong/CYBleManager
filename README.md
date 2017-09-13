@@ -6,7 +6,7 @@ About bluetooth library, contains connection, data transceiver, OTA.
 
 ## Installation
 
-**For Cocoapods:
+**For Cocoapods:**
 
 - Create/Update your **Podfile** with the following contents
 
