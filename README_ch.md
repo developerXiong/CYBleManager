@@ -1,36 +1,36 @@
-# CYBleManager [中文](README_ch.md)
-About bluetooth library, contains connection, data transceiver, OTA.
+# CYBleManager [English](README.md)
+关于蓝牙库，包含连接，数据收发器，OTA。
 
 [![Version](http://img.shields.io/cocoapods/v/iOSDFULibrary.svg)](http://cocoapods.org/pods/iOSDFULibrary)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 
-## Installation
+## 安装
 
-**For Cocoapods:**
+**对于Cocoapods:**
 
-- Create/Update your **Podfile** with the following contents
+- 使用以下内容创建/更新您的Podfile
 
     ```
     target 'YourProjectName' do
-        use_frameworks!
-        pod 'CYBleManager'
+    use_frameworks!
+    pod 'CYBleManager'
     end
     ```
 
-- Install dependencies
-    
+- 安装依赖关系
+
     ```
     pod install
     pod update
     ```
 
-- Import the library to any of your classes by using `@import CYBleManager` and begin working on your project
+- 通过使用`@import CYBleManager`并开始处理您的项目，将库导入任何类
 
-**For Carthage:**
+**对于Carthage:**
 
-## Usage
+## 用法
 
-- scanning ble
+- 扫描蓝牙设备
 
     ```
     [[CYBleManager manager] startScan:10 services:nil isFilter:YES result:^(NSArray<CBPeripheral *> *peripherals) {
@@ -39,7 +39,7 @@ About bluetooth library, contains connection, data transceiver, OTA.
     }];
     ```
 
-- connect ble
+- 连接蓝牙设备
 
     ```
     [[CYBleManager manager] connectBle:peripheral timeout:10 state:^(CYBleManagerConnectState state) {
@@ -48,7 +48,7 @@ About bluetooth library, contains connection, data transceiver, OTA.
     }];
     ```
 
-- disconnect ble
+- 断开蓝牙设备
 
     ```
     [[CYBleManager manager] disconnectBle:peripheral state:^(CYBleManagerDisconnectState state) {
@@ -57,7 +57,7 @@ About bluetooth library, contains connection, data transceiver, OTA.
     }];
     ```
 
-- receive data
+- 收发数据
 
     ```
     [[CYBleManager manager] writeStringValue:value toCharacter:character back:^(NSData *data) {
@@ -69,10 +69,11 @@ About bluetooth library, contains connection, data transceiver, OTA.
     ```
     [[CYBleManager manager] readValueForCharacteristic:character back:^(NSData *data) {
         // your code
+
     }];
     ```
 
-- OTA
+- 蓝牙空中升级
 
     ```
     [[CYBleManager manager] startScan:10 services:@[[CBUUID UUIDWithString:@"FE59"]] isFilter:NO result:^(NSArray<CBPeripheral *> *peripherals) {
@@ -87,4 +88,4 @@ About bluetooth library, contains connection, data transceiver, OTA.
     }]
     ```
 
-    
+
